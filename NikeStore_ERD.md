@@ -59,3 +59,5 @@ INVENTORY {
 - CUSTOMER to SALE -  one customer can "make" many purchases which is why it is defined as one-to-many " ||--o{ "
 - PRODUCT to SALE - a product can be a part of (included in) many purchases, which is why it is defined as one-to-many
 - PRODUCT to INVENTORY - The product is managed under the inventory of a single shoe store, which states the number on hand (stores). This is defined as One-to-One " ||--o| "
+
+#### Using these attributes and relationships, the Nike store can manage it's inventory, customer base, and track transactions. All are important for day-to-day business operations to run a store smoothly and can be scaled to more locations.
