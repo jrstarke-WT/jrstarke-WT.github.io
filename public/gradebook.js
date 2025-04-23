@@ -38,4 +38,4 @@ function populateGradeBook(data) {
 			tableElm.appendChild(row);
 			
 		});
-
+}
