@@ -21,7 +21,22 @@ function fetchGradeData() {
 
 function populateGradeBook(data) {
 	console.log("Populating gradebook with data: ", data);
-}
-
+	let tableElm = document.getElementById("gradebook");
+		data.forEach(function(assignment){
+		let row = document.createElement("tr");
+		let columns = [];
+		columns.name = document.createElement('td');
+		columns.name.appendChild(
+			document.createTextName(assignment.last_name + ", " + assignment.first_name)
+);
+		columns.grade = document.createElement('td');
+			columns.grade.appendChild(
+				document.CreateTextNode(assignment.total_grade)
+			);
+			row.appendChild(columns.name);
+			row.appendChild(columns.grade);
+			tableElm.appendChild(row);
+			
+		});
 const gradeData = fetchGradeData();
 populateGradeBook(gradeData);
